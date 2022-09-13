@@ -8,4 +8,10 @@
     font-family: sahel;
     src: url("../fonts/Sahel.ttf");
   }
+  body{
+    font-family: sahel;
+    line-height: 1.6em;
+    background-color: lightgoldenrodyellow;
+    direction: rtl;
+  }
   
