@@ -1,4 +1,4 @@
-const city=[
+const places=[
               {
         id: 1,
         name: "Dublin",
@@ -38,7 +38,31 @@ const city=[
 ]
 
 const imgs =document.querySelectorAll(".all-imgs img");
+const currentImages =document.querySelectorAll(".current-img");
+const titleImages =document.querySelectorAll(".image-title");
+const descImages =document.querySelectorAll(".image-desc");
 
 console.log(imgs);
-imgs.forEach((image,index)=>{image.src=place[index].src
+
+imgs.forEach((image,index)=>
+{image.src=places[index].src;
+
+ image.addEventListener("clik" ,function(){
+    currentImages.src=place[index].src;
+
+ titleImage.innerText=places[index].name;
+ descImage.innerText=places[index].description;
+
+ currentImages.classList.add(".animate-imgs ")
+
+ setTimeout(function(){
+    currentImages.classList.remove(".animate-imgs")
+ })
+
+
+ })  
 })
+
+currentImages.src=places[0].src;
+titleImages.innerText=places[0].name;
+descImages.innerText=places[0].description;

@@ -80,11 +80,13 @@
   
   .animate-imgs {
     opacity: 0.5;
+    transform: translate(10,0);
     animation: animate-imgs 0.5s ease-in-out forwards;
   }
   
   @keyframes animate-imgs {
     100% {
       opacity: 1;
+      transform: translate(0,0);
     }
   }
