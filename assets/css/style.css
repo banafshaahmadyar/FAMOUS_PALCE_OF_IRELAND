@@ -69,4 +69,22 @@
     
   }
   
+  .current-img {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
   
+  .animate-imgs {
+    opacity: 0.5;
+    animation: animate-imgs 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes animate-imgs {
+    100% {
+      opacity: 1;
+    }
+  }
