@@ -36,3 +36,9 @@ const city=[
 
 
 ]
+
+const imgs =document.querySelectorAll(".all-imgs img");
+
+console.log(imgs);
+imgs.forEach((image,index)=>{image.src=place[index].src
+})
