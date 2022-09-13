@@ -14,4 +14,17 @@
     background-color: lightgoldenrodyellow;
     direction: rtl;
   }
+  img{
+    border-radius: 20px;
+    padding: 5px;
+  }
+  
+.wrapper {
+    display: flex;
+  }
+  
+  .all-imgs {
+    display: flex;
+    flex-direction: column;
+  }
   
